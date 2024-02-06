@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4983ebc585.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--for icons-->
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Logo/e-logoa.webp" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#portfolio">Portofolio</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>
+            Hi,I am <span>Ayush</span> <br />
+            from India.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!----------About---------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="column-1">
+            <img src="Aryanpics/A1.webp" />
+          </div>
+          <div class="column-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Hi,This is Ayush Gupta studying in Chitkara University,Rajpura.I
+              am persuing my degree i.e Btech in CSE. Currently I am in second
+              year 4th semester.I have done various languages till now including
+              python,C,C++ and also Frontand languages such as
+              Html,Css,Javascript.....
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing web/app interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>App Development</span><br />Android/IOS interfaces
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="Experience">
+              <ul>
+                <li>
+                  <span>2021- Current</span><br />UI/UX Design Training at ET
+                  Institute
+                </li>
+                <li><span>2019 - 2021</span><br />Team lead at StarApp</li>
+                <li>
+                  <span>2017 - 2019</span><br />UI/UX Design Executive at Coin
+                  Digital Ltd.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="education">
+              <ul>
+                <li>
+                  <span>2016</span><br />UI/UX Design Training at ET Institute
+                </li>
+                <li><span>2016</span><br />MBA from MIT Bangalore.</li>
+                <li><span>2014</span><br />BBA from ISM Bangalore.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------Services-------------------------->
+    <div id="Services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-codepen"></i>
+            <h2>Web Design</h2>
+            <p>
+              This is everything about web design you will learn about this more
+              later on..
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              This is everything about UI/UX design you will learn about this
+              more later on..
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              This is everything about App design you will learn about this more
+              later on..
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------Portfolio---------------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Logo/image-1.webp" />
+            <div class="layer">
+              <h3>Photo Sharing</h3>
+              <p>This tells us about sharing of a photo.</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="Logo/image-3.webp" />
+            <div class="layer">
+              <h3>Connecting Networks</h3>
+              <p>This tells us about Connecting Networks.</p>
+              <a href="#"><i class="fa-solid fa-globe"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="Logo/image-4.webp" />
+            <div class="layer">
+              <h3>Editing Photo</h3>
+              <p>This tells us about Editing of a photo.</p>
+              <a href="#"><i class="fa-solid fa-wand-magic-sparkles"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-----------------Contact----------------------------->
+    <div id="Contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> Contact@email.com</p>
+            <p><i class="fa-solid fa-phone"></i> +919874563210</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://linkedin.com/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="Logo/e-logoa.webp" class="btn btn2" download
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright Made &copy; Ayush.</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontent = document.getElementsByClassName("tab-content");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontents of tabcontent) {
+          tabcontents.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      <!--phone dimensions-->
+      var Sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        Sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        Sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
